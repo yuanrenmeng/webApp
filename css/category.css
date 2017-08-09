@@ -1,0 +1,187 @@
+/************************************头部***********************/
+.category_header {
+    width: 100%;
+    height: 100%;
+    background: url("../images/header-bg.png") repeat-x;
+    position: relative;
+}
+
+.jd_header {
+    width: 100%;
+    height: 44px;
+}
+
+.jd_header > .header_box > form {
+    padding-left: 50px;
+}
+
+.jd_header > .header_box > form > input {
+    border: 1px solid #ccc;
+}
+
+.jd_header > .header_box > form > span {
+    left: 62px;
+}
+
+.category_header > ul {
+    width: 100%;
+    height: 57px;
+    background: #404042;
+}
+
+.category_header > ul > li {
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+
+.category_header > ul > li.current {
+    background: #2d2d2d;
+}
+
+.category_header > ul > li > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+
+.category_header > ul > li > a > p {
+    margin-top: 4px;
+}
+
+.category_header .icon_home,
+.category_header .icon_category,
+.category_header .icon_car,
+.category_header .icon_me {
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+}
+
+.category_header .icon_home {
+    background-position: -30px -24px;
+}
+
+.category_header .icon_category {
+    background-position: -60px -24px;
+}
+
+.category_header .icon_car {
+    background-position: -90px -24px;
+}
+
+.category_header .icon_me {
+    background-position: -120px -24px;
+}
+
+/*抽取头部左边箭头和最右边书籍图标的样式*/
+.headPostion {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    -webkit-background-origin: content-box;
+    background-origin: content-box;
+    background-size: 200px 200px;
+    position: absolute;
+}
+
+.jd_header > .header_box > .icon_back {
+    background-position: -20px 0px;
+    top: 3px;
+    left: 8px;
+}
+
+.jd_header > .header_box > .icon_shortcut {
+    background-position: -60px 0px;
+    position: absolute;
+    top: 3px;
+    right: 8px;
+}
+
+/******************************中间内容***********************/
+.category_main {
+    width: 100%;
+     height: auto;
+    overflow: hidden; /*让左边float以后能撑开父盒子的宽度*/
+}
+
+/*******左边内容*******/
+.category_left {
+    float: left;
+    width: 76px;
+    overflow: hidden;
+    height: 100%; /*必须要*/
+}
+
+.category_left > ul {
+    width: 100%;
+    /*height: auto;*/
+}
+
+.category_left > ul > li {
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.category_left > ul > li > a {
+    display: block;
+    height: 46px;
+    color: #666;
+}
+
+.category_left > ul > li.current > a {
+    color: red;
+}
+
+/*******右边内容*******/
+
+.category_right {
+    padding: 10px;
+    background: rgb(243, 245, 247);
+    /*这个overflow的目的是排除了浮动元素，让盒子自动拥有填满除了浮动元素外的空间*/
+    overflow: hidden;
+}
+
+.category_right > .advert > img {
+    width: 100%;
+}
+
+.category_right > .product1 {
+    margin-top: 10px;
+}
+
+.category_right > .product1 > h4 {
+    font-weight: normal;
+    padding-bottom:10px;
+}
+
+.category_right > .product1 > ul {
+    width: 100%;
+    background-color: #fff;
+    padding: 7px;
+}
+
+.category_right > .product1 > ul > li {
+    width: 32.9%;
+    float: left;
+}
+
+.category_right > .product1 > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.category_right > .product1 > ul > li > a > img {
+    width: 100%;
+}
+
+

@@ -1,0 +1,290 @@
+body{
+    background-color: #f5f5f5;
+}
+.jd_layout{
+    min-width:340px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/**************************头部*************************/
+.jd_header{
+    width: 100%;
+    height: 44px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.jd_header>.header_box{
+    min-width:340px;
+    max-width: 640px;
+    height: 100%;
+    margin:0 auto;
+    position: relative;
+    /*background-color: rgba(201,21,35,0.85);*/
+}
+.jd_header>.header_box>.icon_logo{
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 14px;
+    left: 7px;
+    background-position: 0px -108px;
+}
+
+/**************************banner*************************/
+.jd_banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.jd_banner>ul{
+    width: 1000%;
+    transform: translateX(-10%);
+}
+.jd_banner>ul>li{
+    width: 10%;
+
+    float: left;
+}
+.jd_banner>ul>li>a{
+    width: 100%;
+}
+.jd_banner>ul>li>a>img{
+    width: 100%;
+}
+.jd_banner>ol{
+    position: absolute;
+    left:50%;
+    bottom: 10px;
+    margin-left: -100px;
+}
+.jd_banner>ol>li{
+    width: 10px;
+    height: 10px;
+    margin-left:10px;
+    float: left;
+    background-color: transparent;
+    border: 1px solid #fff;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.jd_banner>ol>li.current{
+    background-color: #fff;
+}
+
+/**************************nav分类搜索*************************/
+.jd_nav{
+    width: 100%;
+    background-color: #fff;
+}
+.jd_nav>ul{
+    border: 1px solid #ccc;
+    padding:10px 0;
+}
+.jd_nav>ul>li{
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding:10px;
+}
+.jd_nav>ul>li img{
+    width: 40px;
+    height: 40px;
+}
+.jd_nav>ul>li p{
+    color: #666;
+}
+/**************************产品*************************/
+.jd_product{
+    width: 100%;
+}
+.jd_product>div{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top:14px;
+}
+/*产品栏目相同样式头部*/
+.product_header{
+    width: 100%;
+    height: 36px;
+    line-height:36px;
+    /* background-color: pink; */
+}
+
+/*秒杀类*/
+.product_seckill>.product_header>ul>li{
+    float: left;
+}
+.product_seckill>.product_header>ul>li:last-child{
+    float: right;
+    margin-right:20px;
+
+}
+.product_seckill>.product_header>ul>li:last-child>span{
+   vertical-align: middle;
+    color: red;
+}
+.product_seckill>.product_header>ul>li:last-child>img{
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+
+}
+.product_seckill>.product_header>ul>li>img{
+    width: 69px;
+    height: 27px;
+    vertical-align: middle;
+    margin-right:10px;
+}
+.product_seckill>.product_header>ul>li>>strong{
+    margin-right:10px;
+}
+.product_seckill>.seckill_main{
+    padding:10px 0;
+}
+.product_seckill>.seckill_main>ul>li{
+    width:33.33%;
+    float: left;
+    text-align: center;
+}
+.product_seckill>.seckill_main>ul>li>a{
+    width: 100%;
+    display: block;
+    border-left: 1px solid #ccc;
+}
+.product_seckill>.seckill_main>ul>li:nth-child(1)>a{
+    border-left:none
+}
+.product_seckill>.seckill_main>ul>li>a>img{
+    width: 80%;
+}
+.product_seckill>.seckill_main>ul>li>h2{
+    color: red;
+}
+.product_seckill>.seckill_main>ul>li>span{
+    text-decoration: line-through;
+}
+
+/*京东乐购  京东超市  爱生活 的通用样式*/
+.p_r{
+    float: right;
+    border-top: 1px solid #ccc;
+}
+.p_l{
+    float: left;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.p_g{
+    width:50%;
+}
+.product_legou{
+    width:100%;
+}
+.product_header>h3{
+    position: relative;
+    font-size: 15px;
+    font-weight: normal;
+    color: #666666;
+    padding-left: 18px;
+}
+.product_header>h3::before{
+    content: "";
+    width: 4px;
+    height: 26px;
+    background: #f23030;
+    position:absolute;
+    top: 5px;
+    left: 9px;
+}
+.product_main>ul>li>a>img{
+    display: block;
+    width: 100%;
+}
+
+/**************************为你推荐*************************/
+.jd_commend{
+    padding: 10px 0;
+    margin-bottom: 60px;
+}
+.jd_commend>.conmend_header{
+    width: 100%;
+    height: 36px;
+    text-align: center;
+}
+.jd_commend>.conmend_header>h3{
+    font-size:15px;
+    color: #666;
+    display: inline-block;
+    background-color: #f5f5f5;
+    position: relative;
+    top: 10px;
+}
+.jd_commend>.conmend_header>hr{
+    background-color: #ccc;
+    height:1px;
+    border: none;
+}
+.jd_commend>.conmend_main>ul{
+    width: 100%;
+}
+.jd_commend>.conmend_main>ul>li{
+    width: 49%;
+    background-color: #fff;
+    padding-bottom:10px;
+    float: left;
+    margin-bottom:10px;
+}
+.jd_commend>.conmend_main>ul>li:nth-of-type(2n){
+    float: right;
+}
+.jd_commend>.conmend_main>ul>li>a>img{
+    width: 100%;
+}
+.jd_commend>.conmend_main>ul>li>a>p{
+    font-size:13px;
+    color: #000;
+}
+.jd_commend>.conmend_main>ul>li>span{
+    display: inline-block;
+    padding:10px;
+    color: red;
+}
+.jd_commend>.conmend_main>ul>li>a:nth-of-type(2){
+    display: inline-block;
+    float: right;
+    padding: 4px 10px;
+    margin: 5px 10px;
+    border: 1px solid #ccc;
+    color: #666;
+}
+
+/**************************底部tabBar选项卡*************************/
+.jd_footer{
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+.jd_footer>ul>li{
+    float: left;
+    width:20%;
+    text-align: center;
+}
+.jd_footer>ul>li>a>img{
+    width: 70px;
+}
+
+
+
+
+
+
+
