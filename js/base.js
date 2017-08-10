@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by Administrator on 2017/5/26.
  */
 /**
@@ -51,4 +51,31 @@ function showHiden() {
             flg = true;
         }
     })
+}
+
+/* shortcut的展示 */
+function shortcutDisplay() {
+    // 1.拿到标签
+    var c_header = document.getElementsByClassName('jd_c_header')[0];
+    var icon_shortcut = c_header.getElementsByClassName('icon_shortcut')[0];
+    var shortcut = c_header.getElementsByClassName('shortcut')[0];
+    var c_main = document.getElementsByClassName('jd_c_main')[0];
+    var oriPaddingTop = parseInt(c_main.style.paddingTop);
+    var changePT = oriPaddingTop + 57;
+    // console.log(oriPaddingTop, changePT);
+
+    mjd.tap(icon_shortcut, function (e) {
+        if (shortcut.style.display == 'table'){
+            shortcut.style.display = 'none';
+            if (document.title == '京东商品分类'){
+                c_main.style.paddingTop = oriPaddingTop +'px';
+            }
+        }else if(shortcut.style.display == 'none'){
+            shortcut.style.display = 'table';
+            if (document.title == '京东商品分类'){
+                c_main.style.paddingTop = changePT +'px';
+            }
+        }
+        // console.log(oriPaddingTop, changePT);
+    });
 }
